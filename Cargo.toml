@@ -1,0 +1,16 @@
+[package]
+name = "nv"
+version = "0.1.0"
+edition = "2024"
+[workspace]
+members = ["server", "worker"]
+
+
+
+[dependencies]
+argmin = { version = "0.11.0", features = ["rayon"] }
+argmin-math = { version = "0.5.1", features = ["nalgebra_latest"] }
+argmin_testfunctions = "0.3.0"
+rand = "0.10.0"
+rand_xoshiro = "0.8.0"
+argmin-observer-slog = "0.2.0"
