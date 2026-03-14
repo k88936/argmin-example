@@ -2,5 +2,15 @@
 name = "server"
 version = "0.1.0"
 edition = "2024"
+build = "../common/build.rs"
 
 [dependencies]
+tonic.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+async-stream.workspace = true
+tonic-prost.workspace = true
+prost.workspace = true
+
+[build-dependencies]
+tonic-prost-build.workspace = true
