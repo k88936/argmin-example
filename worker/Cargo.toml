@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 argmin.workspace = true
 argmin-math.workspace = true
+argmin_testfunctions.workspace = true
